@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  text-align: center;
+}
+.nav{
+  display: flex; 
+  align-items: center; 
+  margin-top: 40px;
+}
+.logo a{
+  font-size: 30px; 
+  font-weight: 600; 
+  text-align: center;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(99, 185, 99);
+  background-image: url(plant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Container{
+  width: 420px;
+  background: rgb(159, 146, 197);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(20px);
+  margin-top: 1rem;
+}
+.Container h2{
+  font-size: 35px;
+  text-align: center;
+  color: black;
+}
+.Container .input-box{
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: #fff;
+}
+.input-box i {
+  color: black;
+  position: absolute;
+  right: 50px;
+  margin-top: 22px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.Container .remember-forget{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forget label input{
+  accent-color: #fff;
+}
+.remember-forget a{
+  color: purple;
+  text-decoration: none;
+}
+.remember-forget a:hover{
+  opacity: .5;
+  text-decoration: underline;
+}
+.Container .btn{
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 45px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor:pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.Container .Register{
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 20px;
+  border-top: 2px solid #162938;
+}
+.Register p a{
+  color: purple;
+  text-decoration: none;
+}
+.Register p a:hover{
+  opacity: .5;
+  text-decoration: underline;
+}
+footer {
+  padding-left: 10px; 
+  padding-right: 10px;
+  margin: 0; 
+  box-sizing: border-box;
+  width: 100%;
+}
+.footerBottom{
+  padding: 0;
+  background-color: black;
+  margin-top: 100px;
+}
+.footerBottom p{
+  text-align: center;
+  color: white;
+  padding: 0;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: rgb(30, 255, 0);
+  font-weight: 400;
+  margin: 0px 5px;
+  width: 100%;
+}
+@media screen and (min-width: 540px)
+{
+.footerBottom ul{
+  flex-direction: column;
+}
+.footerBottom ul p{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+}
