@@ -1,0 +1,81 @@
+*{
+    text-decoration: none;
+}
+.Navbar{
+    background: rgb(98, 109, 84); 
+    font-family: calibri; 
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.logo {
+    font-size: 30px; 
+    font-weight: 600; 
+    color: whitesmoke;
+}
+.detail input{
+    list-style: none; 
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 40px;
+    margin-top: 10px;
+    height: 20px;
+    text-align: center;
+    border: none;
+}
+.detail .bt{
+    background-color:white;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+}
+.bt:hover{
+    opacity: 0.5;
+    transition: 5ms;
+}
+.container{
+    background: rgb(122, 120, 120);
+    color: black;
+    font-family: helvetica;
+    padding: 20px 30px;
+    border-radius: 40px;
+    margin: 70px 70px;
+    align-items: center;
+    width: 420px;
+    text-align: center;
+}
+.container h2{
+    border-bottom: 1px solid #162938;
+}
+.container .btn input{
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    text-align: center;
+    color: black;
+    height: 20px;
+}
+.butt{
+    align-items: right;
+    border-top: 1px solid #162938;
+}
+.butt .btn1{
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+}
+.butt .btn2{
+    background-color: blue;
+    color: white;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+}
+.btn2:hover{
+    opacity: 0.5;
+    transition: 5ms;   
+}

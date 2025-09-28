@@ -1,15 +1,14 @@
 *{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing:border-box ;
-    text-align: center;
-    font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing:border-box ;
+  text-align: center;
+  font-family: Helvetica;
 }
 body{
   display: flex;
   flex-direction: column;
-  margin: 0;
   align-items: center;
   background: rgb(122, 120, 120);
 }
@@ -22,9 +21,7 @@ body{
   border: 2px solid rgba(255, 255, 255, .2);
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   backdrop-filter: blur(20px);
-  margin-top: 5rem;
-  margin-bottom: 15rem;
-  background: transparent;
+  margin-top: 2rem;
 }
 .Container h1{
   font-size: 25px;
@@ -35,30 +32,14 @@ body{
   font-size: 15px;
   text-align: center;
   color: black;
-  margin-top: .5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #162938;
 }
 .Container input{
-  width: 100px;
-  height: 30px;
-  border-radius: 10px;
+  width: 150px;
 }
-/*.btn{
-  width: 50%;
-  border: none;
-  outline: none;
-  border-radius: 45px;
-  box-shadow: 0 0 10px rgba(27, 22, 22, 0.1);
-  cursor:pointer;
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  text-decoration: underline;
-  background: none;
-}*/
 .input-box input{
-    
   background: transparent;
   border: none;
   outline: none;
@@ -69,6 +50,62 @@ body{
 .input-box input::placeholder{
   color: #fff;
 }
-.input-box .password{
-    width: 100%;
+.input-box1 input{
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  padding: 10px 25px 10px 10px;
+}
+.input-box1 input::placeholder{
+  color: #fff;
+}
+.input-box3 input{
+  width: 60%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  padding: 10px 25px 10px 10px;
+}
+.input-box3 input::placeholder{
+  color: #fff;
+}
+.input-box4 input{
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  padding: 10px 25px 10px 10px;
+}
+.input-box4 input::placeholder{
+  color: #fff;
+}
+.btn a{
+  font-weight:bold;
+  color: white;
+  background: blue;
+  border: none;
+  width: 50px;
+  height: 50px;
+  outline: none;
+}
+.btn a:hover{
+  opacity: .5;
+  color:aqua;
+}
+.bottom{
+  border-top: 2px solid #162938;
+}
+@media screen and (min-width: 540px){
+.Container{
+  flex-direction: column;
+}
+.bottom{
+  text-align: center;
+  margin: 10px;
+}
 }

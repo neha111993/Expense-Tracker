@@ -34,7 +34,7 @@ body{
   border-radius: 10px;
   padding: 30px 40px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .2);
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   backdrop-filter: blur(20px);
   margin-top: 1rem;
@@ -66,8 +66,8 @@ body{
   color: black;
   position: absolute;
   right: 50px;
-  margin-top: 22px;
-  transform: translateY(-50%);
+  margin-top: 15px;
+  transform: translateY(-50%)0;
   font-size: 20px;
 }
 .Container .remember-forget{
@@ -75,12 +75,13 @@ body{
   justify-content: space-between;
   font-size: 14.5px;
   margin: -15px 0 15px;
+  color: black;
 }
 .remember-forget label input{
   accent-color: #fff;
 }
 .remember-forget a{
-  color: purple;
+  color: blue;
   text-decoration: none;
 }
 .remember-forget a:hover{
@@ -107,7 +108,7 @@ body{
   border-top: 2px solid #162938;
 }
 .Register p a{
-  color: purple;
+  color: blue;
   text-decoration: none;
 }
 .Register p a:hover{
