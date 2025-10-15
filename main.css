@@ -51,6 +51,7 @@ body {
   height: 20px;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 .btn:hover{
   opacity: 0.5;
@@ -61,6 +62,7 @@ body {
   margin-bottom: .5rem;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 .btn1:hover{
   opacity: 0.5;
@@ -71,6 +73,7 @@ body {
   margin-bottom: .5rem;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 .btn2:hover{
   opacity: 0.5;
@@ -79,9 +82,9 @@ body {
 .btn3{
   height: 30px;
   margin-bottom: .5rem;
-  
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 .btn3:hover{
   opacity: 0.5;
