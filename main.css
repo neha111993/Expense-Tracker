@@ -18,6 +18,10 @@
   font-weight: 600; 
   color: whitesmoke;
 }
+h2{
+  border-bottom: 2px solid black;
+  gap: 5 rem;
+}
 li{
   list-style: none; 
   display: inline-block;
