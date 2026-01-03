@@ -9,46 +9,49 @@
 </head>
 <body>
     <div class="Container">
-        <form action="">
-            <h1>Create a new account</h1>
-            <h2>It's quick and easy</h2>
+        <h1>Create a new account</h1>
+        <h2>It's quick and easy</h2>
+        <form action="page.html" method="GET">
             <div class="input-box">
-                <label for="">
-                    <input type="text" name="firstname" placeholder="First Name">&nbsp;&nbsp;<input type="text" name="lastname" placeholder="Last Name">
-                </label>
-            </div><br>
+                <label for="fname"></label>
+                <input type="fname" name="firstname" placeholder="First Name" required>&nbsp;&nbsp;
+                <label for="lname"></label>
+                <input type="lname" name="lastname" placeholder="Last Name" required>
+            </div>
+            <br>
             <div class="input-box1">
-                <label for=""><b>Date of Birth</b><br><br>
-                    <input type="text" size="3" name="date" placeholder="Date">&nbsp;&nbsp;<input type="text" size="3" name="month" placeholder="Month">&nbsp;&nbsp;<input type="text" size="4" name="Year" placeholder="Year">
-                </label>
-            </div><br>
-            <div class="input-box2">
-                <label for="gender"><b><bg>Gender</bg></b><br><br>
-                    <input type="radio" value="Male" id="male">Male
-                </label>
-                <label for="gender">
-                    <input type="radio" value="Female" id="female">Female
-                </label>
-            </div><br>
+                <label for=DOB><b>Date of Birth</b></label><br><br>
+                <input type="number" size="3" name="date" placeholder="Date" min="0" max="31" required>
+                <label for="month"></label>
+                <input type="text" size="3" name="month" placeholder="Month" required>
+                <label for="year"></label>
+                <input type="number" size="4" name="Year" placeholder="Year" min="1111" max="9999" required>
+            </div>
+            <br>
+            <div class="select">
+                <label for="gender"><b><bg>Gender</bg></b></label><br><br>
+                <input type="radio" value="Male" name="gender" required>Male
+                <input type="radio" value="Female" name="gender" required>Female
+                <input type="radio" value="other" name="gender" required>others
+            </div>
+            <br><br>
             <div class="input-box3">
-                <label for="">
-                    <input type="text" placeholder="Mobile number or email address" name="email" id="number-address">
-                </label>
-            </div><br>
+                <label for="input"></label>
+                <input type="text" placeholder="Mobile number or email address" name="email" id="number-address" required>
+            </div>
+            <br>
             <div class="input-box4">
-                <label for="password">
-                    <input type="text" placeholder="New password" name="password" id="password">
-                </label>
-            </div><br>
-            <div class="btn">
-                    <button><a href="page.html">Sign Up</a></button>
-                </div><br>
+                <label for="password"></label>
+                <input type="password" placeholder="New password" name="password" id="password" required>
+            </div>
+            <br>
+            <button type="submit">Sign Up</button>
             <div class="bottom"><br>
                 <div class="Login">
-                    <p>Already have any account?<br><a href="page.html">Log in</a></p>
+                    <p>Already have any account?<br><a href="index.html">Log in</a></p>
                 </div>
             </div>
-        </form>
+        </form>    
     </div>
 </body>
 </html>

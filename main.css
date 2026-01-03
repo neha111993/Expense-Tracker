@@ -7,6 +7,9 @@
   font-family: calibri; 
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
 }
 .navdiv{
   display: flex; 
@@ -20,7 +23,10 @@
 }
 h2{
   border-bottom: 2px solid black;
-  gap: 5 rem;
+  margin-top: -10px;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 li{
   list-style: none; 
@@ -47,24 +53,44 @@ body {
 .Page input{
   width: 100%;
   height: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   text-align: center;
+}
+.se{
+  border-radius: 10px;
+  width: 50%;
+  height:30px;
+  text-align: center;
+  margin-left: 40px;
 }
 .btn{
   height: 20px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  width: 100px;
+  height: 30px;
+  margin-left: 160px;
 }
 .btn:hover{
   opacity: 0.5;
   transition: 5ms;
 }
+fieldset{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+legend{
+  text-align: center;
+}
 .btn1{
-  height: 30px;
-  margin-bottom: .5rem;
-  border-radius: 20px;
+  height: 40px;
+  width:100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
 }
@@ -73,9 +99,10 @@ body {
   transition: 5ms;
 }
 .btn2{
-  height: 30px;
-  margin-bottom: .5rem;
-  border-radius: 20px;
+  height: 40px;
+  width:100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
 }
@@ -84,9 +111,10 @@ body {
   transition: 5ms;
 }
 .btn3{
-  height: 30px;
-  margin-bottom: .5rem;
-  border-radius: 20px;
+  height: 40px;
+  width:100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
 }

@@ -19,30 +19,35 @@
     </nav>
     <div class="Page">
         <h1 style="text-align: centre;">Welcome to Personal Expense Tracker</h1>
+        <fieldset>
         <h2>Add a New Expense</h2>
         <form action="action./php">
-            <label for="Enter Category"><b>Category</b> &nbsp;&nbsp;
-                <input type="text" placeholder="Enter Category" id="Enter Category">
-            </label>
+            <label><b>Category</b></label>
+            <select class="se" name="category" required>
+                <option value="Select">Select</option>
+                <option value="Chennai">Food</option>
+                <option value="lucknow">Party</option>
+                <option value="Delhi">Grocery</option>
+                <option value="Delhi">ELectricity Bill</option>
+                <option value="Delhi">Phone Bill</option>
+            </select>
             <br><br>
-            <label for="Enter Amount"><b>Amount</b> &nbsp;
-                <i class="fa-solid fa-indian-rupee-sign"></i>
-                <input type="text" placeholder="Enter Amount" id="Enter Amount">
-            </label>
+            <label for="Enter Amount"><b>Amount</b></label>
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <input type="text" placeholder="Enter Amount" id="Enter Amount" required>
             <br><br>
-            <label for="Enter Date"><b>Date</b> &nbsp;&nbsp;
-                <input type="date" placeholder="Enter Date" id="Enter Date">
-            </label>
+            <label for="Enter Date"><b>Date</b></label>
+                <input type="date" placeholder="Enter Date" id="Enter Date" required>
             <br><br>
+            <button type="submit" class="btn" >Submit</button>
         </form>
-        <button type="submit" class="btn" >Submit</button>
-        <br><br>
-        
-            <button type="submit" class="btn1">Expense Summaries</button>
-            <button type="submit" class="btn2">Spending by Category</button>
-            <button type="submit" class="btn3">Daily Spending</button>
-        
-        
+        </fieldset><br>
+        <fieldset>
+            <legend style="color:chartreuse;">Track Your Expenses</legend>
+                <button type="submit" class="btn1">Expense Summaries</button>
+                <button type="submit" class="btn2">Spending by Category</button>
+                <button type="submit" class="btn3">Daily Spending</button>
+        </fieldset>
     </div>
 </body>
 </html>

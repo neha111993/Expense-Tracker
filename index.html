@@ -13,23 +13,24 @@
         <h1>EXPENSE TRACKER</h1>
     </div>    
     <div class="Container">
-        <form action="">
-            <h2>Log In</h2>
+        <h2>Log In</h2>
+        <form action="page.html" method="GET">
             <div class="input-box">
-                <input type="text" name="Username" placeholder="Username" required>
+                <label for="Username"></label>
+                <input type="text" id="Username" name="Username" placeholder="Username" required>
                 <i class="fa-solid fa-user"></i>
             </div>
             <div class="input-box">
-                <input type="text" name="password" placeholder="password" required>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="password" required>
                 <i class="fa-solid fa-lock"></i>
             </div>
             <div class="remember-forget">
-            <label>
+                <label for="checkbox"></label>
                 <input type="checkbox">&nbsp;Remember me
-            </label>
-            <a href="Reset.html">Forgot password?</a>
+                <a href="Reset.html">Forgot password?</a>
             </div>
-            <button type="submit" class="btn"><a href="page.html">Log in</a></button>
+            <button type="submit">Log in</button>
             <div class="Register"><br>
                 <p>Don't have any account?&nbsp;&nbsp;<a href="Register.html">Register</a></p>
             </div>
@@ -37,11 +38,7 @@
     </div>
 <footer>
     <div class="footerBottom">
-        <ul>
-            <div class="Copyright">
-                <p>Copyright &copy;2025; Designed By <span class="designer">PreSha</span></p>
-            </div>
-        </ul>
+        <p>Copyright &copy; 2025; Designed By <span class="designer">PreSha</span></p>
     </div>
 </footer>
 <script src="pass.js"></script>
