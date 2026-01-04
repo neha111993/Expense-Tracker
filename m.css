@@ -145,7 +145,7 @@ footer {
   margin: 0px 5px;
   width: 100%;
 }
-@media screen and (min-width: 540px)
+@media screen and (min-width: 480px)
 {
 .footerBottom ul{
   flex-direction: column;
@@ -153,6 +153,5 @@ footer {
 .footerBottom ul p{
   width: 100%;
   text-align: center;
-  margin: 10px;
 }
 }
