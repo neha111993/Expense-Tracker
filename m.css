@@ -10,22 +10,13 @@
   align-items: center; 
   margin-top: 40px;
 }
-.logo a{
-  font-size: 30px; 
-  font-weight: 600; 
-  text-align: center;
-}
 body{
   display: flex;
   flex-direction: column;
   margin: 0;
   align-items: center;
   min-height: 100vh;
-  background: rgb(99, 185, 99);
-  background-image: url(plant.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: #a28086;
 }
 .Container{
   width: 420px;
@@ -145,13 +136,20 @@ footer {
   margin: 0px 5px;
   width: 100%;
 }
-@media screen and (min-width: 480px)
+@media (max-width: 700px)
 {
+  .Container{
+    width: 370px;
+  }
+  .remember-forget a{
+    text-wrap: nowrap;
+  }
 .footerBottom ul{
   flex-direction: column;
 }
 .footerBottom ul p{
   width: 100%;
   text-align: center;
+  margin: 10px;
 }
 }

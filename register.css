@@ -21,7 +21,7 @@ body{
   border: 2px solid rgba(255, 255, 255, .2);
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   backdrop-filter: blur(20px);
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 h1{
   font-size: 25px;
@@ -116,13 +116,18 @@ button{
   color: black;
   text-decoration: underline;
 }
-@media screen and (min-width: 540px){
-.Container ul{
-  flex-direction: column;
-}
-.Container ul p{
-  width: 100%;
-  text-align: center;
-  margin: 10px;
+@media(max-width: 700px)
+{
+  .Container{
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+  }
+  .input-box1 input{
+    width: 100px;
+  }
+  .input-box1 input::placeholder{
+    color: #fff;
 }
 }

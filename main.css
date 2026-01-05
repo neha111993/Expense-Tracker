@@ -2,7 +2,17 @@
 *{
   text-decoration: none;
 }
+body {
+  background: rgb(122, 120, 120);
+  color: black;
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+}
 .navbar{
+  display: flex; 
+  align-items:center; 
+  justify-content:space-between;
   background: rgb(98, 109, 84); 
   font-family: calibri; 
   padding-left: 10px;
@@ -11,39 +21,31 @@
   margin-right: -8px;
   margin-top: -8px;
 }
-.navdiv{
-  display: flex; 
-  align-items:center; 
-  justify-content:space-between;
-}
-.logo {
+h1{
   font-size: 30px; 
   font-weight: 600; 
   color: whitesmoke;
 }
 h2{
+  text-align: centre;
+  font-size: 30px; 
+  font-weight: 600; 
+  color: whitesmoke;
+}
+h3{
   border-bottom: 2px solid black;
   margin-top: -10px;
   text-align: center;
   margin-left: 80px;
   margin-right: 80px;
 }
-li{
+.navbar a{
   list-style: none; 
   display: inline-block;
-}
-li a{
   color: white; 
   font-size: 20px; 
   font-weight: bold; 
   margin-right: 40px;
-}
-body {
-  background: rgb(122, 120, 120);
-  color: black;
-  font-family: helvetica;
-  display: flex;
-  flex-direction: column;
 }
 .Page{
   display: flex;
@@ -71,7 +73,7 @@ body {
   cursor: pointer;
   width: 100px;
   height: 30px;
-  margin-left: 160px;
+  margin-left: 120px;
 }
 .btn:hover{
   opacity: 0.5;
@@ -121,4 +123,19 @@ legend{
 .btn3:hover{
   opacity: 0.5;
   transition: 5ms;
+}
+@media(max-width:700px)
+{
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  h3{
+    text-wrap: nowrap;
+  }
+  .navbar a{
+    margin-right: 5px;
+  }
 }
