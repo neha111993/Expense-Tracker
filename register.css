@@ -44,12 +44,14 @@ h2{
   background: transparent;
   border: none;
   outline: none;
+  width: 38%;
   border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 40px;
   padding: 10px 25px 10px 10px;
 }
-.input-box1 label{
-  color: black;
+.input-box input:hover{
+  background-color: darkgray;
+  border: 2px solid brown;
 }
 .input-box input::placeholder{
   color: #fff;
@@ -58,12 +60,20 @@ h2{
   background: transparent;
   border: none;
   outline: none;
+  width: 80%;
   border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 40px;
   padding: 10px 25px 10px 10px;
 }
 .input-box1 input::placeholder{
   color: #fff;
+}
+.input-box1 input:hover{
+  background-color: darkgray;
+  border: 2px solid brown;
+}
+.input-box1 label{
+  color: black;
 }
 .select{
   color: black;
@@ -74,7 +84,7 @@ h2{
   justify-content: space-evenly; 
 }
 .input-box3 input{
-  width: 60%;
+  width: 80%;
   background: transparent;
   border: none;
   outline: none;
@@ -85,13 +95,24 @@ h2{
 .input-box3 input::placeholder{
   color: #fff;
 }
+.input-box3 input:hover{
+  background-color: darkgray;
+  border: 2px solid brown;
+  color: #162938;
+}
 .input-box4 input{
   background: transparent;
   border: none;
   outline: none;
   border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 40px;
+  width: 80%;
   padding: 10px 25px 10px 10px;
+}
+.input-box4 input:hover{
+  background-color: darkgray;
+  border: 2px solid brown;
+  color: #162938;
 }
 .input-box4 input::placeholder{
   color: #fff;
@@ -124,10 +145,7 @@ button{
     text-align: center;
     margin: 10px;
   }
-  .input-box1 input{
-    width: 100px;
-  }
   .input-box1 input::placeholder{
     color: #fff;
-}
+  }
 }

@@ -10,15 +10,16 @@
 <body>
     <nav class="navbar">
         <h1>Expense Tracker</h1>
-        <a href="index.html">Log Out</a>
+        <a title="Go to Home Page" class="link" href="index.html">Log Out</a>
+        <a href="index.html"><i title="log-out" class="fa-solid fa-right-from-bracket"></i></a>
     </nav>
     <h2>Welcome to Personal Expense Tracker</h1>
     <div class="Page">
         <fieldset>
         <h3>Add a New Expense</h2>
         <form action="action./php">
-            <label><b>Category</b></label>
-            <select class="se" name="category" required>
+            <label><b>CATEGORY</b></label>
+            <select name="category" required>
                 <option value="Select">Select</option>
                 <option value="Chennai">Food</option>
                 <option value="lucknow">Party</option>
@@ -27,11 +28,11 @@
                 <option value="Delhi">Phone Bill</option>
             </select>
             <br><br>
-            <label for="Enter Amount"><b>Amount</b></label>
+            <label for="Enter Amount"><b>AMOUNT</b></label>
             <i class="fa-solid fa-indian-rupee-sign"></i>
             <input type="text" placeholder="Enter Amount" id="Enter Amount" required>
             <br><br>
-            <label for="Enter Date"><b>Date</b></label>
+            <label for="Enter Date"><b>DATE</b></label>
                 <input type="date" placeholder="Enter Date" id="Enter Date" required>
             <br><br>
             <button type="submit" class="btn" >Submit</button>
@@ -39,9 +40,9 @@
         </fieldset><br>
         <fieldset>
             <legend style="color:chartreuse;">Track Your Expenses</legend>
-                <button type="submit" class="btn1">Expense Summaries</button>
-                <button type="submit" class="btn2">Spending by Category</button>
-                <button type="submit" class="btn3">Daily Spending</button>
+                <a href=""><button type="submit" class="btn1">Expense Summaries</button></a>
+                <a href=""><button type="submit" class="btn1">Spending by Category</button></a>
+                <a href=""><button type="submit" class="btn1">Daily Spending</button></a>
         </fieldset>
     </div>
 </body>

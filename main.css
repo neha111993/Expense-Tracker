@@ -17,6 +17,8 @@ body {
   font-family: calibri; 
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 35px;
   margin-left: -8px;
   margin-right: -8px;
   margin-top: -8px;
@@ -24,6 +26,11 @@ body {
 h1{
   font-size: 30px; 
   font-weight: 600; 
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  left: 45%;
+  top: -20px;
   color: whitesmoke;
 }
 h2{
@@ -39,13 +46,26 @@ h3{
   margin-left: 80px;
   margin-right: 80px;
 }
-.navbar a{
+.link{
+  list-style: none; 
+  display: flex;
+  position: absolute;
+  color: white; 
+  font-size: 20px; 
+  font-weight: bold; 
+  right: 60px;
+  top: 10px;
+}
+.navbar i{
   list-style: none; 
   display: inline-block;
   color: white; 
   font-size: 20px; 
   font-weight: bold; 
   margin-right: 40px;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
 }
 .Page{
   display: flex;
@@ -58,13 +78,17 @@ h3{
   border-radius: 10px;
   border: none;
   text-align: center;
+  margin-top: 10px;
 }
-.se{
+select{
   border-radius: 10px;
-  width: 50%;
+  width: 100%;
   height:30px;
+  margin-top: 10px;
   text-align: center;
-  margin-left: 40px;
+}
+span{
+  align-items: center;
 }
 .btn{
   height: 20px;
@@ -76,8 +100,15 @@ h3{
   margin-left: 120px;
 }
 .btn:hover{
-  opacity: 0.5;
+  opacity: 1;
   transition: 5ms;
+  border:2px solid white;
+  background-color: brown;
+  color: white;
+}
+.fa-solid{
+  color: black;
+  font-size: small;
 }
 fieldset{
   padding-left: 20px;
@@ -96,38 +127,25 @@ legend{
   border: none;
   cursor: pointer;
 }
+.btn1 a{
+  color: black;
+}
 .btn1:hover{
-  opacity: 0.5;
+  opacity: 1;
   transition: 5ms;
+  border:2px solid white;
+  background-color: brown;
+  color: white;
 }
-.btn2{
-  height: 40px;
-  width:100%;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-.btn2:hover{
-  opacity: 0.5;
+.btn1 a:hover{
   transition: 5ms;
-}
-.btn3{
-  height: 40px;
-  width:100%;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-.btn3:hover{
-  opacity: 0.5;
-  transition: 5ms;
+  color: white;
 }
 @media(max-width:700px)
 {
   h1{
     text-align: center;
+    left:35%;
   }
   h2{
     text-align: center;
@@ -135,7 +153,16 @@ legend{
   h3{
     text-wrap: nowrap;
   }
-  .navbar a{
-    margin-right: 5px;
+  .link{
+    visibility: hidden;
+  }
+  .navbar{
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .navbar i{
+    visibility: visible;
+    cursor: pointer;
+    margin-top: -8px;
   }
 }

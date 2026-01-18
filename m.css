@@ -106,7 +106,7 @@ body{
   text-decoration: none;
 }
 .Register p a:hover{
-  opacity: .5;
+  opacity: 1;
   text-decoration: underline;
 }
 footer {
@@ -141,8 +141,11 @@ footer {
   .Container{
     width: 370px;
   }
-  .remember-forget a{
+  .remember-forget {
     text-wrap: nowrap;
+  }
+  .remember-forget a{
+    margin-left: -20px;
   }
 .footerBottom ul{
   flex-direction: column;
