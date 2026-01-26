@@ -14,7 +14,7 @@
     </div>    
     <div class="Container">
         <h2>Log In</h2>
-        <form action="page.html" method="GET">
+        <form action="" method="GET">
             <div class="input-box">
                 <label for="Username"></label>
                 <input type="email" id="email" name="Email" placeholder="Email Address" required>
@@ -23,8 +23,9 @@
             <div class="input-box">
                 <label for="password"></label>
                 <input type="password" id="password" name="password" placeholder="password" required>
-                <i class="fa-solid fa-lock"></i>
+                <i id="eyeicon" class="fa-solid fa-eye"></i>
             </div>
+            <div class="btn" onclick="genPassword()">Generate Password</div>
             <div class="remember-forget">
                 <label for="checkbox"></label>
                 <input type="checkbox">&nbsp;Remember me
