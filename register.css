@@ -14,7 +14,7 @@ body{
 }
 .Container{
   width: 500px;
-  background: rgb(139, 126, 179);
+  background: rgb(139, 126, 140);
   color: #fff;
   border-radius: 10px;
   padding: 20px 10px 20px;
@@ -117,6 +117,27 @@ h2{
 .input-box4 input::placeholder{
   color: #fff;
 }
+.Container .btn{
+  font-weight: 100;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: white;
+  padding: 5px;
+  width: 180px;
+  cursor: pointer;
+  margin-left: 34%;
+  background: transparent;
+  transition: 0.4s ease-in;
+  margin-top: 15px;
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-align: center;
+}
+.Container .btn:hover{
+  background-color: darkgray;
+  border: 1px solid brown;
+  color: #162938;
+}
 button{
   width: 80px;
   height: 30px;
@@ -126,6 +147,9 @@ button{
   color: black;
   margin-bottom: 10px;
   cursor: pointer;
+}
+button a{
+  color: black;
 }
 .bottom{
   border-top: 2px solid #162938;
